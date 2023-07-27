@@ -11,16 +11,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-      - name: Use Node.js
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+	  - name: Use Node.js
         uses: actions/setup-node@v3
         with:
            node-version: 16
            cache: 'npm'
       - run: npm install
       - run: npm run build
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: rsync deployment
         uses: D3rHase/rsync-deploy-action@v0.2
         with:
