@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+           node-version: 16
+           cache: 'npm'
+      - run: npm install
+      - run: npm run build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: rsync deployment
+        uses: D3rHase/rsync-deploy-action@v0.2
+        with:
+            HOST: ${{ secrets.HOST }}
+            PORT: ${{ secrets.PORT }}
+            USER: ${{ secrets.USER }}
+            PRIVATE_SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            REPOSITORY_PATH: build/*
+            SERVER_PATH: /var/www/html/
