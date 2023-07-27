@@ -1,120 +1,70 @@
-# React-Ecommerce-website
-### Work Under Progress
+# Getting Started with Create React App
 
-### Version 1 :
-* The data is stored locally and not on Firestore
-* GraphQL has not been used.
-version 1 is hosted [HERE!](https://ak-clothing-attempt-two.herokuapp.com/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-An E commerce platform made using React JS, Redux, Firebase (authentication), Firestore, Stripe API (temporarily creating dummy payment gateway)
+## Available Scripts
 
-The application is composed of the following Features:
+In the project directory, you can run:
 
-### Front-End
-* A landing page with animated minimalistic design, with the major categories of items.
-* A quick peek page where 5 products of each categories are on display.
-* A page with Sign-in and Sign-out components.
-* All form related fields are made using reusable components.
-* Has a cart feature which opens up and displays the items selected in a summary, also has a checkout button.
-* The cart component also allows to edit the contents of the items selected.
-* Check out features are yet to be integrated into the appplication. 
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Firebase
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* As of this moment I am using firebase for user authentication, also enabled google sign in authentication.
-* It is also used to store user data 
-* In the future it will also hold all shopping related and cart related dtaa of each user.
+### `npm test`
 
-**Progress:**
-Version 1 completed and hosted
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Version 2 Progress: 50%
-<br/>
-![](src/assets/progressbar.png)
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**SCREENSHOTS:**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Landing Page:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![](src/assets/main-screen.png)
----
-Product Preview:
+### `npm run eject`
 
-![](src/assets/preview-page.png)
----
-Sign-in && Sign-Up Page:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-![](src/assets/signinup.png)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Cart Section:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-![](src/assets/cart.png)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
+## Learn More
 
-## Developed With
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
-* [React](https://reactjs.org/) - A javascript library for building user interfaces
-* [Create react app](https://create-react-app.dev/) - A quick method to start developing a react application.
-* [Babel](https://babeljs.io/) - A transpiler for javascript
-* [Webpack](https://webpack.js.org/) - A module bundler
-* [SCSS](http://sass-lang.com/) - A css metalanguage
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Getting Started
+### Analyzing the Bundle Size
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Prerequisites
+### Making a Progressive Web App
 
-The following software is required to be installed on your system:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-* Node 8.x
-* Npm 3.x
+### Advanced Configuration
 
-Type the following commands in the terminal to verify your node and npm versions
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```bash
-node -v
-npm -v
-```
+### Deployment
 
-### Install
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Follow the following steps to get development environment running.
+### `npm run build` fails to minify
 
-* Clone _'react-e-commerce-website.git'_ repository from GitHub
-
-  ```bash
-  git clone https://github.com/AdityaKumawat97/react-e-commerce-website.git
-  ```
-
-   _OR USING SSH_
-
-  ```bash
-  git clone git@github.com:AdityaKumawat97/react-e-commerce-website.git
-  ```
-
-* Install node modules
-
-   ```bash
-   npm install
-   ```
-
-
-### Starting front-end servers
-
-* Build application
-
-  ```bash
-  npm start
-  ```
----
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
